@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: black;
+    height: 100vh;
+}
+
+.center{
+    width: 50%;
+    margin: auto;
+    background-image: linear-gradient(to right, blue, gray);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    padding: 2rem 1rem;
+}
+header h1,
+.tasks h2{
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+}
+
+#task-input,
+.task input{
+    width: 80%;
+    height: 2rem;
+    border-radius: 20px;
+}
+#task-input{
+    background-color: rgb(40, 36, 36);
+    color: white;
+}
+#task-input::placeholder{
+    padding: 0 1rem;
+}
+
+#task-submit,
+.edit-btn{
+    color: pink;
+    font-weight: 1.5rem;
+    background-image: linear-gradient(to right, blue, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#task-submit:hover{
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+#task-submit:active{
+    opacity: 0.6;
+}
+
+.tasks{
+    padding: 1rem 1rem; 
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.actions{
+    display: flex;
+    width: auto;
+    gap: 1rem;
+}
+
+.task input{
+    color: white;
+    padding: 0 0.5rem;
+}
+.task input:not(:read-only){
+    color: red;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.actions button{
+    height: 2rem;
+    width: 100%;
+    font-weight: bolder;
+}
+
+.actions .delete-btn{
+    color: red;
+}
+
+.actions .delete-btn:hover{
+    opacity: 0.7;
+}
+.actions .delete-btn:active{
+    opacity: 0.6;
+}
+
+
+
+
