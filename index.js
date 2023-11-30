@@ -11,7 +11,7 @@ const taskInput = document.getElementById("task-input");
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if (taskInput.value === " ") {
+    if (taskInput.value === "") {
         alert("Please include a task before adding to the list!")
         return
     }
@@ -42,7 +42,7 @@ submitBtn.addEventListener("click", (e) => {
 
     
     taskDisplay.value = taskInput.value;
-    taskInput.value = " ";
+    taskInput.value = "";
 
     editBtn.addEventListener("click", () => {
 
